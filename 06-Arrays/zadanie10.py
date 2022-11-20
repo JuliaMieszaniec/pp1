@@ -9,6 +9,3 @@ for x in li:
         odd+=1
 
 print(f'even:{even} odd:{odd}')
-
-
-
