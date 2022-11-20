@@ -7,7 +7,7 @@ a=[
     [0, 4, 8]
 ]
 suma=0
-for x in a:
+for x in range(a[0][0], a[3][2]):
     if x%2==0:
         suma+=x
     print(suma)
