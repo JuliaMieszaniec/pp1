@@ -1,0 +1,4 @@
+name:Julia
+surname:Mieszaniec
+university: UEK
+field of studies: Informatyka Stosowana
