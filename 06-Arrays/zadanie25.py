@@ -1,7 +1,8 @@
-def occurs(number,array):
+def occurs(number, array):
     if number in array:
-        True
+        print('True')
     else:
-        False
+        print(False)
 
-occurs(23,[15, 38, 7, 23, 14])
+
+occurs(23 , [15, 38, 7, 23, 14])
