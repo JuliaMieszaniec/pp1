@@ -1,3 +1,3 @@
-array=[1:10]
+array=[]
 
 print(array)

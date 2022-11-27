@@ -4,6 +4,3 @@ for arr in array:
      for x in arr:
         i+=1
         print(x, end="")
-        if i>3:
-                                  
-
