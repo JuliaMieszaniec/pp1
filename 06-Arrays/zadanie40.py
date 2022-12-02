@@ -10,6 +10,16 @@ for arr in array:
 
         elif a< min:
             min=a
+j=0
+h=0
+for i in array:
+    if min in i:
+        print(min,'row',h)
+    if max in i:
+        print(max,'row',j)
+    j+=1
+    h+=1
+
 
 print(min)
 print(max)
