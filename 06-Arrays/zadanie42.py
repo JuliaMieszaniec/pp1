@@ -5,13 +5,10 @@ array=[
 ]
 b=array.copy()
 i=0
-while i < len(array):
-    z=array[i][0]
-    array[i][0]=array[i][-1]
-    array[i][-1]=z
+while i < len(b):
+    z=b[i][0]
+    b[i][0]=b[i][-1]
+    b[i][-1]=z
 
-for c in b:
-    for h in c:
-        print(h, end=" ")
-    print()
-
+print(array)
+print(b)
