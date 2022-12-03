@@ -1,3 +1,5 @@
+import json
+
 f=open("icao.txt","w")
 dictionary={
     "a":"alfa",
@@ -27,5 +29,5 @@ dictionary={
     "y":"yankee",
     "z":"zulu"
 }
-
+f.write(json.dumps(dictionary,indent=4))
 f.close()
