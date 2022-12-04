@@ -1,14 +1,18 @@
+#####
+# Queue definition
+##
+
 stack = []
 
 # add value at the top of the stack
-def push(value):
+def put(value):
     stack.append(value)
     
 # remove the topmost element of the stack
 # and return its value    
-def pop():
+def get():
     if not empty():
-        return stack.pop()
+        return stack.pop(0)
     else:
         return None
     
@@ -18,6 +22,5 @@ def empty():
 
 # display stack
 def display():
-    for i in range(len(stack)-1,-1,-1):
+    for i in range(len(stack)):
         print(stack[i])
-    print()

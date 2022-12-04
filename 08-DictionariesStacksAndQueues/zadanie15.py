@@ -1,6 +1,6 @@
 import json
 
-f=open("icao.txt","w")
+
 dictionary={
     "a":"alfa",
     "b":"bravo",
@@ -29,5 +29,9 @@ dictionary={
     "y":"yankee",
     "z":"zulu"
 }
-f.write(json.dumps(dictionary,indent=4))
+
+f=open("icao.txt","w")
+#f.write(json.dumps(dictionary,indent=4))
+for k,v in dictionary.items():
+    f.write(f"{k} {v} \n" )
 f.close()
