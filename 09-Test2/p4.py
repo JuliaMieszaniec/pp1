@@ -1,7 +1,9 @@
-def f(dictionary,x,y) :
-    import re
+def f(dictionary,x,y):
+    sum=0
+    for key, value in dictionary.items():
+        for v in value:
+            if v>=x and v<=y:
+                sum+=v
+    print(sum)
 
-    x=re.findall("[0-9]",dictionary)
-    print(x)
-
-f(([0,2,7,87,9]),2,9) 
+f({"arr1":[4,5,6], "arr2":[7,5]}, 5, 6)
