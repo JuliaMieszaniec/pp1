@@ -1,11 +1,16 @@
-import shutil
+import json
 
+with open("emaple2.json",encoding="utf-8") as f:
+    data = json.load(f)
 
-f=open("studentsdata.json", "w")
-z=open('dane.json','r')
+result=[]
+for i,row in enumerate(data):
+    result.append({})
+    for key,value in row.items():
+        if key!="Id" and key!="Nazwa_produktu" and key!="Nazwa_producenta":
+            continue
+        else:
+            result[i][key]=value
 
-shutil.copyfile('studentsdata.json','dane.json')
-
-
-z.close()
-f.close()
+with open("16.json","w",encoding="utf-8") as f:
+    json.dump(result,f,indent=4,ensure_ascii=False)
