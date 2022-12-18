@@ -4,4 +4,4 @@ liczba=array[0]
 for arr in array:
     if arr> liczba:
         liczba=arr
-        print(arr)
+print(liczba)
