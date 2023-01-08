@@ -24,4 +24,6 @@ class Arrays():
 
 
 Arrays.f(5,8)
+Arrays.create_random(20,-7,8)
+Arrays.form_to_arr([1,2,3,4,5,-1,0],-1,2)
 
