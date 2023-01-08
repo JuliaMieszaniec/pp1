@@ -15,4 +15,4 @@ class C():
     def __str__(self):
         return f"{self.name}={self.sum}"
  
-print(C([5,12]))
+c=C([5,12])
