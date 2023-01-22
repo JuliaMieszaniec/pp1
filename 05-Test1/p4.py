@@ -18,3 +18,11 @@ f(20576,False)
 f(20576,True) 
 f(13115,True)
 
+def fu(string):
+    s=""
+    for i in string:
+        s+= i+"-"
+    print(s[0:-1])
+        
+        
+fu('smart')

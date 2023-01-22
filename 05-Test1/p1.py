@@ -4,3 +4,14 @@ def f(no):
 
 
 f("5290312400019022") 
+
+def fu(znaki):
+    x=znaki.count("+")
+    z=znaki.count("-")
+    if x==z:
+        print(True)
+    else:
+        print(False)
+
+fu("++-+")
+fu("++--")
